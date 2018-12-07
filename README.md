@@ -8,9 +8,9 @@ Le projet est developpé en Java à l'aide du framework **SpringBoot** developp�
 
 **Pourquoi Springboot ?**
 
-SpringBoot est un framework qui a la particulirité d'embarquer en plus de l'application Java un serveur d'application **Jboss**. Il permet nottament de déployer l'application sur tout type de machine à condition que celle ci possède **Java**, couplé à **Maven** un gestionnaire de dépendance il n'est pas nécessaire d'installer toutes les dépendances sur la machine.
+SpringBoot est un framework qui a la particularité d'embarquer en plus de l'application Java un serveur d'application **Jboss**. Il permet nottament de déployer l'application sur tout type de machine à condition que celle ci possède **Java**, couplé à **Maven** un gestionnaire de dépendance il n'est pas nécessaire d'installer toutes les dépendances sur la machine.
 
-La facilité de Springboot est démontré avec la commande de lancement
+La facilité de Springboot est démontrée avec la commande de lancement
 
 ```bash
 mvn spring-boot:run      
@@ -20,9 +20,9 @@ mvn spring-boot:run
 
 Une fois notre application lancée il est possible de créer une API Rest afin que celle-ci soit appelée par des contributeurs utilisant n'importe quelle technologie, l'API Rest est couplé à du Json qui permet l'intéropérabilité entre les applications, l'application Springboot permet d'appeler les différentes API qui vont restituer les applications, ce qui facilitera le travail des developpeurs front-ent afin de regrouper les API en une seule API 
 
-**Quelles sont les API qui ont été utilisés ? **
+**Quelles sont les API qui ont été utilisées ? **
 
-Deux API ont été utlisé dans ce projet
+Deux API ont été utlisées dans ce projet
 
 - L’API de *OpenWeatherMap* pour les données Météo
 
@@ -47,8 +47,7 @@ Une fois tous nos travaux terminés l'API est disponible à cette adresse prête
   > https://opendata-nuit.herokuapp.com/swagger-ui.html#
 
 
-
-<img src="images/swagger.png" alt="Swagger" style="float: left; margin-right: 10px;"/>Il est très facile de la tester notament avec l'outil Postman
+<img src="images/swagger.png" alt="Swagger" style="float: left; margin-right: 10px;"/>Il est très facile de la tester notamment avec l'outil Postman
 
 Nous avons intégrer notre API à notre Interface Web et Application Mobile, vous pourrez y voir apparaitre des données météo et trafic routier disponible à cette adresse.
 
@@ -58,10 +57,10 @@ Nous avons intégrer notre API à notre Interface Web et Application Mobile, vou
 
 - Interface Mobile
 
-  > TODO LIEN
+  > https://github.com/Yuoox/MaraudeurN2I2018
 
 <img src="images/xamarin.png" alt="Swagger" style="float: left; margin-right: 10px;"/>
 
-
+Merci de votre lecture.
 
  
