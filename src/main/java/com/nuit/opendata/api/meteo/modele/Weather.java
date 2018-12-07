@@ -1,5 +1,7 @@
 package com.nuit.opendata.api.meteo.modele;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,5 +18,6 @@ public class Weather {
 	private int id;
 	private String main;
 	private String description;
-
+	@JsonProperty("icon")
+	private String icon;
 }
