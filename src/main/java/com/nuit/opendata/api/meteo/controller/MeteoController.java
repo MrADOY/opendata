@@ -1,6 +1,12 @@
 package com.nuit.opendata.api.meteo.controller;
 
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -68,5 +74,32 @@ public class MeteoController {
 		return ResponseEntity.ok().body(result);
 
 	}
+	
+	
+	public MeteoVille callApi(Meteo m) {
+		UriComponents uri = UriComponentsBuilder
+
+				.fromHttpUrl(
+						"http://api.openweathermap.org/data/2.5/weather?q={name}&APPID=a1e5ea2bc50227fb037cd1f01d5e541b")
+				.buildAndExpand(m.getName());
+
+		String urlString = uri.toUriString();
+
+		RestTemplate restTemplate = new RestTemplate();
+
+		return restTemplate.getForObject(urlString, MeteoVille.class);
+	}
+	
+	@GetMapping(value = "/meteos")
+	public ResponseEntity<List<MeteoVille>> getAllMeteo() {
+		Pageable pageable = PageRequest.of(0, 5);
+		List<Meteo> meteo = repository.findAll(pageable).stream().limit(5).collect(Collectors.toList());
+
+		Collections.shuffle(meteo);
+		
+		return ResponseEntity.ok().body(meteo.stream().map(m -> callApi(m)).collect(Collectors.toList()));
+
+	}
+	
 
 }
