@@ -2,6 +2,15 @@
 
 But du défi, utiliser le maximum d'API présentant des "open data".
 
+## Developpé par l'équipe 404 Not Found
+
+1. Aurelien Pietrzak
+2. Aymeric Vanderkelen
+3. Ghislain Deschamps
+4. Adrien Jablonski
+5. Hollertt Marceau
+6. Jourdain Nicolas
+
 ## Presentation du projet
 
 Le projet est developpé en Java à l'aide du framework **SpringBoot** developpé par Pivotal
