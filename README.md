@@ -46,7 +46,9 @@ Une fois tous nos travaux terminés l'API est disponible à cette adresse prête
 
   > https://opendata-nuit.herokuapp.com/swagger-ui.html#
 
-Il est très facile de la tester notament avec l'outil Postman
+
+
+<img src="images/swagger.png" alt="Swagger" style="float: left; margin-right: 10px;"/>Il est très facile de la tester notament avec l'outil Postman
 
 Nous avons intégrer notre API à notre Interface Web et Application Mobile, vous pourrez y voir apparaitre des données météo et trafic routier disponible à cette adresse.
 
@@ -58,7 +60,7 @@ Nous avons intégrer notre API à notre Interface Web et Application Mobile, vou
 
   > TODO LIEN
 
-
+<img src="images/xamarin.png" alt="Swagger" style="float: left; margin-right: 10px;"/>
 
 
 
